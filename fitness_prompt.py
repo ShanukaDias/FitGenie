@@ -5,9 +5,8 @@ from dotenv import load_dotenv
 from fpdf import FPDF
 from io import BytesIO
 
-# Load API key from .env or fallback
-load_dotenv()
-API_KEY = os.getenv("OPENROUTER_API_KEY", "Key")
+
+API_KEY = st.secrets["OPENROUTER_API_KEY"]
 MODEL = "openai/gpt-3.5-turbo"
 
 # ------------------ OpenRouter Prompt Caller ------------------ #
