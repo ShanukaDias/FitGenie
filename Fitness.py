@@ -42,7 +42,7 @@ with tab1:
                 st.success("✅ Workout Plan Generated Successfully!")
                 st.markdown("### 📋 Your AI-Powered Workout Plan:")
                 st.markdown(plan)
-                st.snow()
+                st.balloons()
 
                 pdf_bytes = generate_pdf("Workout Plan", plan)
                 st.download_button("📄 Download as PDF", data=pdf_bytes, file_name="workout_plan.pdf", use_container_width=True)
